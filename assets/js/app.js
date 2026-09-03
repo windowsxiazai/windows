@@ -239,6 +239,17 @@
       '<li><a href="#" id="hasherBtn">校验工具</a></li>' +
       '<li><a href="index.html#about">关于本站</a></li>' +
       "</ul>";
+
+    /* 底部友情链接（数据见 nav.js 的 FRIEND_LINKS） */
+    var footer = $(".footer");
+    if (footer) {
+      var fl = (window.FRIEND_LINKS || []).map(function (s) {
+        return '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + esc(s.name) + "</a>";
+      }).join("");
+      if (fl) {
+        footer.insertBefore(el("div", "friend-links", '<span class="fl-label">友情链接：</span>' + fl), footer.firstChild);
+      }
+    }
   }
 
   /* ---------------- 网站导航页 ---------------- */

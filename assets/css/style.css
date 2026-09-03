@@ -649,6 +649,17 @@ h1, h2, h3 { font-weight: 600; }
   line-height: 1.9;
 }
 
+/* ---------- 友情链接 ---------- */
+.friend-links { margin-bottom: 2px; }
+.friend-links .fl-label { color: #9fb0c2; }
+.friend-links a {
+  color: var(--primary);
+  font-weight: 600;
+  margin: 0 6px;
+  border-bottom: 1px solid transparent;
+}
+.friend-links a:hover { border-bottom-color: var(--primary); }
+
 /* ---------- 移动端 ---------- */
 @media screen and (max-width: 767px) {
   .layout { padding-left: 0; }
