@@ -1,7 +1,7 @@
 /* 镜像元数据 —— 仅收录 ink.md 中提供了网盘链接的版本；
- * 校验值来源：msdn.sjjzm.com（2026-09 核对）。
- * 暂缺校验值的 4 个条目（该站尚未收录）：
- *   Windows 11 26H1 消费者/商业版（2026-04 更新）、
+ * 校验值来源：msdn.sjjzm.com（2026-09 核对）；
+ * 26H1 消费者/商业版校验值由本地实测（md5.md）。
+ * 暂缺校验值的 2 个条目：
  *   Windows 10 21H2 消费者/商业版（2023-06 更新）。 */
 window.MSDN_DATA = {
   "systems": [
@@ -13,7 +13,7 @@ window.MSDN_DATA = {
           "id": "26h1",
           "items": [
             {
-              "title": "Windows 消费者版本 26H1（2026年04月更新）x64",
+              "title": "Windows11 消费者版本 26H1（2026年04月更新）x64",
               "bits": "64位",
               "lang": "中文简体",
               "date": "2026-04",
@@ -26,13 +26,13 @@ window.MSDN_DATA = {
                 "专业工作站版"
               ],
               "file": "zh-cn_windows_11_consumer_editions_version_26h1_updated_april_2026_x64_dvd_69ae07e3.iso",
-              "size": "",
-              "sha256": "",
-              "sha1": "",
-              "md5": ""
+              "size": "7.38GB",
+              "sha256": "3ae31cdd572f0a29191456a9efb0ea8f5cc0466ee28c789dd07dc2e3cafdb478",
+              "sha1": "703092525c85180aebbab88225eb02cf6c5ef4cc",
+              "md5": "3e7ba0209f804bea593548c08323ed8a"
             },
             {
-              "title": "Windows 商业版 26H1（2026年04月更新）x64",
+              "title": "Windows11 商业版 26H1（2026年04月更新）x64",
               "bits": "64位",
               "lang": "中文简体",
               "date": "2026-04",
@@ -44,10 +44,10 @@ window.MSDN_DATA = {
                 "专业工作站版"
               ],
               "file": "zh-cn_windows_11_business_editions_version_26h1_updated_april_2026_x64_dvd_ac820afd.iso",
-              "size": "",
-              "sha256": "",
-              "sha1": "",
-              "md5": ""
+              "size": "7.31GB",
+              "sha256": "ffccd1f7c0da80d3a2e93211d546cdbfae5af6cc767d2d48d656e5862ff4a649",
+              "sha1": "fbd1692f47e79fc30cb7969e77e8a69d89b2a73f",
+              "md5": "bbdb4c3a7c0a79bb0b59e57bfff1b3c8"
             }
           ]
         },
