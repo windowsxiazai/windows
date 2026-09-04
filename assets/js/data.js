@@ -1,8 +1,7 @@
 /* 镜像元数据 —— 仅收录 ink.md 中提供了网盘链接的版本；
  * 校验值来源：msdn.sjjzm.com（2026-09 核对）；
- * 26H1 消费者/商业版校验值由本地实测（md5.md）。
- * 暂缺校验值的 2 个条目：
- *   Windows 10 21H2 消费者/商业版（2023-06 更新）。 */
+ * 26H1 消费者/商业版、21H2 消费者/商业版（2023-06 更新）
+ * 校验值由本地实测（md5.md）。 */
 window.MSDN_DATA = {
   "systems": [
     {
@@ -256,10 +255,10 @@ window.MSDN_DATA = {
                 "专业工作站版"
               ],
               "file": "zh-cn_windows_10_consumer_editions_version_21h2_updated_june_2023_x64_dvd_ff07e9a7.iso",
-              "size": "",
-              "sha256": "",
-              "sha1": "",
-              "md5": ""
+              "size": "5.70GB",
+              "sha256": "9b9c4f9408ec7d1f07119b855e11e6d214295daffa487334516a6ea965e686da",
+              "sha1": "4a57b45682dbed093d3fe24c0f22bcd4b6366715",
+              "md5": "edb8b4a4b01ee6b9c7fbcca55cd131ec"
             },
             {
               "title": "Windows 商业版 21H2（2023年06月更新）x64",
@@ -274,10 +273,10 @@ window.MSDN_DATA = {
                 "专业工作站版"
               ],
               "file": "zh-cn_windows_10_business_editions_version_21h2_updated_june_2023_x64_dvd_74594186.iso",
-              "size": "",
-              "sha256": "",
-              "sha1": "",
-              "md5": ""
+              "size": "5.58GB",
+              "sha256": "6e35c5c828b13a0c81d83df606218cd70effca4ec0dc6ebf905d8e5b2c7913e4",
+              "sha1": "c570afaa5f068f07ff6e635152f12c27e94b80be",
+              "md5": "0055deb0506e9140b009df0e54c87145"
             }
           ]
         },
