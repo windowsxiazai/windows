@@ -6,7 +6,7 @@ zh-cn_windows_11_consumer_editions_version_25h2_updated_april_2026_x64_dvd_38233
 
 
 zh-cn_windows_11_consumer_editions_version_26h1_updated_april_2026_x64_dvd_69ae07e3.iso
-链接：https://pan.xunlei.com/s/VP0dxuCceMaOOm0JqH5Se2QzA1?pwd=nvvv# 复制这段内容后打开「手机迅雷 App」即可获取。无需下载在线查看，视频原画享倍速播放
+链接：https://pan.xunlei.com/s/VP0eWU_4tbi2WvGpoB_E3k3zA1?pwd=essi# 复制这段内容后打开「手机迅雷 App」即可获取。无需下载在线查看，视频原画享倍速播放
 
 
 zh-cn_windows_11_business_editions_version_26h1_updated_april_2026_x64_dvd_ac820afd.iso

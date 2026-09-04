@@ -7,7 +7,7 @@
 window.SITE_LINKS = {
   /* ---------------- Windows 11 ---------------- */
   "zh-cn_windows_11_consumer_editions_version_26h1_updated_april_2026_x64_dvd_69ae07e3": {
-    "xunlei": "https://pan.xunlei.com/s/VP0dxuCceMaOOm0JqH5Se2QzA1?pwd=nvvv",
+    "xunlei": "https://pan.xunlei.com/s/VP0eWU_4tbi2WvGpoB_E3k3zA1?pwd=essi#",
     "aliyun": "",
     "baidu": "",
     "baiduPwd": "",
