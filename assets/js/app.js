@@ -143,16 +143,13 @@
 
   function buildRow(label, id, value, opts) {
     opts = opts || {};
-    var item = el("div", "item" + (opts.cls ? " " + opts.cls : ""));
-    /* 网盘渠道：名称后附"访问"链接，点击直达网盘页面 */
-    var labelHtml = '<div class="label">' + esc(label);
-    if (opts.visit && /^https?:\/\//i.test(value || "")) {
-      labelHtml += '<a class="visit" href="' + esc(value) + '" target="_blank" rel="noopener">访问</a>';
-    }
-    labelHtml += "</div>";
-    var html = labelHtml +
+    /* 网盘渠道：附"访问"按钮（位于复制按钮左侧），点击直达网盘页面 */
+    var visit = !!(opts.visit && /^https?:\/\//i.test(value || ""));
+    var item = el("div", "item" + (opts.cls ? " " + opts.cls : "") + (visit ? " has-visit" : ""));
+    var html = '<div class="label">' + esc(label) + "</div>" +
       '<div class="edit"><input type="text" class="input" id="' + id + '" readonly value="' + esc(value) + '"></div>' +
-      '<div class="copy" data-copy-target="' + id + '">复制</div>';
+      '<div class="copy" data-copy-target="' + id + '">复制</div>' +
+      (visit ? '<a class="visit" href="' + esc(value) + '" target="_blank" rel="noopener">访问</a>' : "");
     if (opts.help) {
       html = '<div class="help" data-help="' + opts.help + '">' + esc(opts.helpLabel || "说明") + "</div>" + html;
     }

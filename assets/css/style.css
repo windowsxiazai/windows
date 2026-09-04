@@ -501,14 +501,24 @@ h1, h2, h3 { font-weight: 600; }
   font-weight: 600;
   color: var(--gray-7);
 }
-/* 网盘名称后的"访问"直达链接 */
-.download .item .label .visit {
-  margin-left: 3px;
+/* "访问"直达按钮：与"复制"同款式，位于复制按钮左侧 */
+.download .item .visit {
+  float: right;
+  width: 58px;
+  text-align: center;
+  background-color: #f5f8fc;
+  border-left: 1px solid var(--line);
   color: var(--primary);
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
+  cursor: pointer;
+  transition: background-color .18s var(--ease), color .18s var(--ease);
 }
-.download .item .label .visit:hover { color: var(--primary-dark); text-decoration: underline; }
+.download .item .visit:hover { background: var(--primary); color: #fff; }
+/* 双按钮行：输入框区为"复制+访问"腾出位置 */
+.download .item.has-visit .edit { right: 178px; }
+/* 带下载工具说明的行（ed2k/BT）：输入框区为"复制+说明"腾出位置 */
+.download .item .help ~ .edit { right: 156px; }
 .download .item .edit {
   position: absolute;
   left: 106px; right: 118px;
@@ -695,6 +705,8 @@ h1, h2, h3 { font-weight: 600; }
   .download .item.url,
   .download .item.pass { width: 47%; }
   .download .item .edit { right: 64px; }
+  .download .item.has-visit .edit { right: 124px; }
+  .download .item .help ~ .edit { right: 64px; }
   .download .item .help { display: none; }
   .back-to-top { right: 14px; bottom: 14px; }
 }
