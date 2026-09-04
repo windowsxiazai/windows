@@ -95,7 +95,7 @@
     },
     hasher: {
       title: "SHA-1 校验工具",
-      body: '<p>下载 <a href="#" class="hasher-link">Hasher 校验工具</a>，将镜像文件拖入即可计算 SHA-1 / MD5，与本站标注核对一致后再使用（不区分大小写）。</p>',
+      body: '<p>下载 <a href="https://windows.ee.cd/tools/Hasher_4.2.zip" class="hasher-link">Hasher 校验工具</a>，将镜像文件拖入即可计算 SHA-1 / MD5，与本站标注核对一致后再使用（不区分大小写）。</p>',
     },
   };
 
