@@ -501,6 +501,14 @@ h1, h2, h3 { font-weight: 600; }
   font-weight: 600;
   color: var(--gray-7);
 }
+/* 网盘名称后的"访问"直达链接 */
+.download .item .label .visit {
+  margin-left: 3px;
+  color: var(--primary);
+  font-weight: 500;
+  text-decoration: none;
+}
+.download .item .label .visit:hover { color: var(--primary-dark); text-decoration: underline; }
 .download .item .edit {
   position: absolute;
   left: 106px; right: 118px;

@@ -31,7 +31,10 @@
   }
 
   /* 版本 id -> 显示名：25h2 -> 25H2，sp1 -> SP1，rtm -> RTM，update -> Update，2024 -> 2024 */
+  /* 规则之外的版本 id 在此指定显示名 */
+  var VER_NAMES = { ltsc: "LTSC / LTSB" };
   function verLabel(id) {
+    if (VER_NAMES[id]) return VER_NAMES[id];
     if (/^\d+$/.test(id)) return id;
     if (/^(sp\d+|rtm)$/i.test(id)) return id.toUpperCase();
     var m = id.match(/^(\d{2,4})h(\d+)$/i);
@@ -119,10 +122,10 @@
    * 只要在 links.js 中填写对应字段，页面上就会自动出现该渠道。
    */
   var CHANNELS = [
-    { key: "xunlei", label: "迅雷云盘" },
-    { key: "aliyun", label: "阿里云盘" },
-    { key: "baidu", label: "百度网盘", pair: "baiduPwd", pairLabel: "百度网盘密码" },
-    { key: "caiyun", label: "移动云盘", pair: "caiyunPwd", pairLabel: "移动云盘密码" },
+    { key: "xunlei", label: "迅雷云盘", visit: true },
+    { key: "aliyun", label: "阿里云盘", visit: true },
+    { key: "baidu", label: "百度网盘", pair: "baiduPwd", pairLabel: "百度网盘密码", visit: true },
+    { key: "caiyun", label: "移动云盘", pair: "caiyunPwd", pairLabel: "移动云盘密码", visit: true },
     { key: "ed2k", label: "ed2k 下载", help: "ed2k", helpLabel: "下载工具" },
     { key: "magnet", label: "BT 磁力", help: "bt", helpLabel: "下载工具" },
   ];
@@ -141,7 +144,13 @@
   function buildRow(label, id, value, opts) {
     opts = opts || {};
     var item = el("div", "item" + (opts.cls ? " " + opts.cls : ""));
-    var html = '<div class="label">' + esc(label) + "</div>" +
+    /* 网盘渠道：名称后附"访问"链接，点击直达网盘页面 */
+    var labelHtml = '<div class="label">' + esc(label);
+    if (opts.visit && /^https?:\/\//i.test(value || "")) {
+      labelHtml += '<a class="visit" href="' + esc(value) + '" target="_blank" rel="noopener">访问</a>';
+    }
+    labelHtml += "</div>";
+    var html = labelHtml +
       '<div class="edit"><input type="text" class="input" id="' + id + '" readonly value="' + esc(value) + '"></div>' +
       '<div class="copy" data-copy-target="' + id + '">复制</div>';
     if (opts.help) {
@@ -163,7 +172,7 @@
       var val = lk[c.key];
       if (val) {
         var row = buildRow(c.label, "dl_" + c.key + "_" + md5Slug(linkKey), val, {
-          help: c.help, helpLabel: c.helpLabel,
+          help: c.help, helpLabel: c.helpLabel, visit: c.visit,
         });
         if (!c.pair) box.appendChild(row);
       }
@@ -175,7 +184,7 @@
       if (!val) return;
       var clear = el("div", "clear");
       var slug = md5Slug(linkKey);
-      clear.appendChild(buildRow(c.label, "dl_" + c.key + "_" + slug, val, { cls: "url" }));
+      clear.appendChild(buildRow(c.label, "dl_" + c.key + "_" + slug, val, { cls: "url", visit: c.visit }));
       if (lk[c.pair]) {
         clear.appendChild(buildRow(c.pairLabel, "dl_" + c.pair + "_" + slug, lk[c.pair], { cls: "pass" }));
       }
