@@ -12,11 +12,20 @@ window.FRIEND_LINKS = [
  * ============================================================ */
 window.NAV_SITES = [
   {
+    cat: "常用工具 · 站点推荐",
+    sites: [
+      { name: "封面在线生成", url: "https://diy.ee.cd/", desc: "封面图片在线制作", badge: "推荐", quick: true },
+      { name: "笔记卡片生成", url: "https://diy.ee.cd/note.html", desc: "笔记卡片在线制作", badge: "推荐", quick: true },
+      { name: "常用软件下载", url: "https://xiaobaike.dpdns.org/", desc: "常用软件一站下载", badge: "推荐", quick: true },
+      { name: "2026 海外 VPS 推荐", url: "https://1000.vps.cd/", desc: "海外 VPS 测评与推荐", badge: "推荐", quick: true }
+    ]
+  },
+  {
     cat: "微软官方 · Windows",
     sites: [
-      { name: "Windows 11 下载", url: "https://www.microsoft.com/zh-cn/software-download/windows11", desc: "官方镜像与安装助手", badge: "官方", quick: true },
-      { name: "Windows 10 下载", url: "https://www.microsoft.com/zh-cn/software-download/windows10", desc: "官方镜像与媒体创建工具", badge: "官方", quick: true },
-      { name: "Microsoft 更新目录", url: "https://www.catalog.update.microsoft.com/", desc: "累积更新 / 驱动离线包", badge: "官方", quick: true },
+      { name: "Windows 11 下载", url: "https://www.microsoft.com/zh-cn/software-download/windows11", desc: "官方镜像与安装助手", badge: "官方" },
+      { name: "Windows 10 下载", url: "https://www.microsoft.com/zh-cn/software-download/windows10", desc: "官方镜像与媒体创建工具", badge: "官方" },
+      { name: "Microsoft 更新目录", url: "https://www.catalog.update.microsoft.com/", desc: "累积更新 / 驱动离线包", badge: "官方" },
       { name: "Microsoft 支持", url: "https://support.microsoft.com/zh-cn", desc: "官方帮助与故障排查", badge: "官方" },
       { name: "Windows 生命周期", url: "https://learn.microsoft.com/lifecycle/", desc: "产品支持周期查询", badge: "官方" }
     ]
@@ -34,7 +43,7 @@ window.NAV_SITES = [
   {
     cat: "启动盘与刻录工具",
     sites: [
-      { name: "Rufus", url: "https://rufus.ie/zh/", desc: "轻量 U 盘启动盘制作", quick: true },
+      { name: "Rufus", url: "https://rufus.ie/zh/", desc: "轻量 U 盘启动盘制作" },
       { name: "Ventoy", url: "https://www.ventoy.net/cn/", desc: "多系统 U 盘，拷入 ISO 即用" },
       { name: "UltraISO 软碟通", url: "https://cn.ezbsystems.com/ultraiso/", desc: "ISO 编辑与刻录" },
       { name: "7-Zip", url: "https://www.7-zip.org/", desc: "免费压缩工具，可直接解压 ISO" }
