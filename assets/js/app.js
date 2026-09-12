@@ -95,7 +95,7 @@
     },
     hasher: {
       title: "SHA-1 校验工具",
-      body: '<p>下载 <a href="https://windows.ee.cd/tools/Hasher_4.2.zip" class="hasher-link">Hasher 校验工具</a>，将镜像文件拖入即可计算 SHA-1 / MD5，与本站标注核对一致后再使用（不区分大小写）。</p>',
+      body: '<p>下载 <a href="https://win.weget.site/tools/Hasher_4.2.zip" class="hasher-link">Hasher 校验工具</a>，将镜像文件拖入即可计算 SHA-1 / MD5，与本站标注核对一致后再使用（不区分大小写）。</p>',
     },
   };
 
@@ -220,7 +220,7 @@
       navItems +
       '<li class="' + (sysId === "links" ? "active" : "") + '"><a href="links.html">网站导航</a></li>' +
       "</ul></div>" +
-      '<div class="copyright">windows.ee.cd<br>资源来自网络收集<br>安装后请使用正版密钥激活</div>';
+      '<div class="copyright">win.weget.site<br>资源来自网络收集<br>安装后请使用正版密钥激活</div>';
 
     /* 顶栏"常用网站"下拉菜单（quick: true 的站点） */
     var quick = [];
@@ -241,7 +241,7 @@
       '<a class="dd-item dd-more" href="links.html">进入网站导航页 →</a>' +
       "</div></div>" +
       '<ul class="list">' +
-      '<li><a href="https://xiaobaike.dpdns.org/" target="_blank" rel="noopener">软件下载</a></li>' +
+      '<li><a href="https://sofe.weget.site/" target="_blank" rel="noopener">软件下载</a></li>' +
       '<li class="hide-mobile"><a href="#" id="favBtn">收藏本站</a></li>' +
       '<li><a href="#" id="hasherBtn">校验工具</a></li>' +
       '<li><a href="index.html#about">关于本站</a></li>' +
