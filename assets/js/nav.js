@@ -2,7 +2,7 @@
  *  底部友情链接 —— 全站统一展示，增删链接只改这里即可
  * ============================================================ */
 window.FRIEND_LINKS = [
-  { name: "电脑小百科", url: "https://sofe.weget.site/" },
+  { name: "电脑小百科", url: "https://soft.weget.site/" },
   { name: "国外十大VPS推荐", url: "https://vps.weget.site/" }
 ];
 
@@ -16,7 +16,7 @@ window.NAV_SITES = [
     sites: [
       { name: "视频封面在线生成", url: "https://Ps.weget.site/", desc: "B站抖音等视频封面图片在线制作", badge: "推荐", quick: true },
       { name: "笔记卡片生成", url: "https://Ps.weget.site/note.html", desc: "笔记卡片在线制作生成", badge: "推荐", quick: true },
-      { name: "常用软件下载", url: "https://sofe.weget.site/", desc: "小百科电脑常用软件一站下载", badge: "推荐", quick: true },
+      { name: "常用软件下载", url: "https://soft.weget.site/", desc: "小百科电脑常用软件一站下载", badge: "推荐", quick: true },
       { name: "2026 海外 VPS 推荐", url: "https://vps.weget.site/", desc: "海外 VPS 测评与推荐", badge: "推荐", quick: true }
     ]
   },

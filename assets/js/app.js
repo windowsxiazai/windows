@@ -241,7 +241,7 @@
       '<a class="dd-item dd-more" href="links.html">进入网站导航页 →</a>' +
       "</div></div>" +
       '<ul class="list">' +
-      '<li><a href="https://sofe.weget.site/" target="_blank" rel="noopener">软件下载</a></li>' +
+      '<li><a href="https://soft.weget.site/" target="_blank" rel="noopener">软件下载</a></li>' +
       '<li class="hide-mobile"><a href="#" id="favBtn">收藏本站</a></li>' +
       '<li><a href="#" id="hasherBtn">校验工具</a></li>' +
       '<li><a href="index.html#about">关于本站</a></li>' +
